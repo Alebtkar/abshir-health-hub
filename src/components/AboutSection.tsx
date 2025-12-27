@@ -1,31 +1,23 @@
 import { Shield, Award, Heart, Users } from "lucide-react";
-
 const AboutSection = () => {
-  const features = [
-    {
-      icon: Shield,
-      title: "جودة عالية",
-      description: "نوفر منتجات طبية بأعلى معايير الجودة العالمية",
-    },
-    {
-      icon: Award,
-      title: "خبرة واسعة",
-      description: "سنوات من الخبرة في مجال المعدات الطبية",
-    },
-    {
-      icon: Heart,
-      title: "التزام تام",
-      description: "نلتزم بتقديم أفضل الخدمات لعملائنا",
-    },
-    {
-      icon: Users,
-      title: "فريق متخصص",
-      description: "فريق من الخبراء المتخصصين في المجال الطبي",
-    },
-  ];
-
-  return (
-    <section id="about" className="py-20 lg:py-28 bg-background">
+  const features = [{
+    icon: Shield,
+    title: "جودة عالية",
+    description: "نوفر منتجات طبية بأعلى معايير الجودة العالمية"
+  }, {
+    icon: Award,
+    title: "خبرة واسعة",
+    description: "سنوات من الخبرة في مجال المعدات الطبية"
+  }, {
+    icon: Heart,
+    title: "التزام تام",
+    description: "نلتزم بتقديم أفضل الخدمات لعملائنا"
+  }, {
+    icon: Users,
+    title: "فريق متخصص",
+    description: "فريق من الخبراء المتخصصين في المجال الطبي"
+  }];
+  return <section id="about" className="py-20 lg:py-28 bg-background">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Content */}
@@ -46,16 +38,11 @@ const AboutSection = () => {
 
             {/* Feature Grid */}
             <div className="grid grid-cols-2 gap-4">
-              {features.map((feature, index) => (
-                <div
-                  key={index}
-                  className="p-4 rounded-lg bg-muted/50 hover:bg-accent transition-colors group"
-                >
+              {features.map((feature, index) => <div key={index} className="p-4 rounded-lg bg-muted/50 hover:bg-accent transition-colors group">
                   <feature.icon className="w-8 h-8 text-primary mb-3 group-hover:text-secondary transition-colors" />
                   <h3 className="font-semibold text-foreground mb-1">{feature.title}</h3>
                   <p className="text-sm text-muted-foreground">{feature.description}</p>
-                </div>
-              ))}
+                </div>)}
             </div>
           </div>
 
@@ -80,7 +67,7 @@ const AboutSection = () => {
                     <p className="text-sm text-muted-foreground">منتج طبي</p>
                   </div>
                   <div className="bg-card rounded-lg p-4 text-center shadow-soft">
-                    <div className="text-3xl font-bold text-secondary">+٥٠</div>
+                    <div className="text-3xl font-bold text-primary">+٥٠</div>
                     <p className="text-sm text-muted-foreground">عميل راضٍ</p>
                   </div>
                 </div>
@@ -93,8 +80,6 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutSection;
