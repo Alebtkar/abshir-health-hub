@@ -5,18 +5,22 @@ import gallery3 from "@/assets/gallery-3.jpg";
 import gallery4 from "@/assets/gallery-4.jpg";
 import gallery5 from "@/assets/gallery-5.jpg";
 import gallery6 from "@/assets/gallery-6.jpg";
+import gallery7 from "@/assets/gallery-7.jpg";
+import gallery8 from "@/assets/gallery-8.jpg";
 
 const GallerySection = () => {
   const [visibleItems, setVisibleItems] = useState<number[]>([]);
   const sectionRef = useRef<HTMLDivElement>(null);
 
   const galleryItems = [
-    { src: gallery1, alt: "جهاز الموجات فوق الصوتية" },
-    { src: gallery2, alt: "أجهزة قياس ضغط الدم" },
-    { src: gallery3, alt: "أدوات جراحية" },
-    { src: gallery4, alt: "أجهزة مراقبة المريض" },
-    { src: gallery5, alt: "مستلزمات طبية" },
-    { src: gallery6, alt: "كراسي متحركة" },
+    { src: gallery1, alt: "سرنجات" },
+    { src: gallery2, alt: "قوز" },
+    { src: gallery3, alt: "رول قطن" },
+    { src: gallery4, alt: "قاون" },
+    { src: gallery5, alt: "كحول" },
+    { src: gallery6, alt: "خيوط جراحية" },
+    { src: gallery7, alt: "بيت شيت" },
+    { src: gallery8, alt: "قلفز" },
   ];
 
   useEffect(() => {
