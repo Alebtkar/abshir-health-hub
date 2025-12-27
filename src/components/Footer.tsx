@@ -1,4 +1,4 @@
-import { Phone, Mail, Globe } from "lucide-react";
+import { Phone, Mail, Globe, Facebook } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -59,6 +59,17 @@ const Footer = () => {
                 >
                   <Globe className="w-5 h-5" />
                   <span dir="ltr">abshr.ly</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/profile.php?id=61568711308183"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 text-card/80 hover:text-card transition-colors"
+                >
+                  <Facebook className="w-5 h-5" />
+                  <span>فيسبوك</span>
                 </a>
               </li>
             </ul>
