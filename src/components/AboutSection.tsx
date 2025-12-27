@@ -63,11 +63,11 @@ const AboutSection = () => {
                 {/* Stats */}
                 <div className="grid grid-cols-2 gap-4 mt-8">
                   <div className="bg-card rounded-lg p-4 text-center shadow-soft">
-                    <div className="text-3xl font-bold text-primary">+١٠٠</div>
+                    <div className="text-3xl font-bold text-primary">+100</div>
                     <p className="text-sm text-muted-foreground">منتج طبي</p>
                   </div>
                   <div className="bg-card rounded-lg p-4 text-center shadow-soft">
-                    <div className="text-3xl font-bold text-primary">+٥٠</div>
+                    <div className="text-3xl font-bold text-primary">+50</div>
                     <p className="text-sm text-muted-foreground">عميل راضٍ</p>
                   </div>
                 </div>

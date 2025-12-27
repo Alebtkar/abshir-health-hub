@@ -13,7 +13,7 @@ const NotFound = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-background px-4">
       <div className="text-center">
-        <h1 className="text-8xl font-bold text-primary mb-4">٤٠٤</h1>
+        <h1 className="text-8xl font-bold text-primary mb-4">404</h1>
         <h2 className="text-2xl font-semibold text-foreground mb-4">الصفحة غير موجودة</h2>
         <p className="text-muted-foreground mb-8 max-w-md mx-auto">
           عذراً، الصفحة التي تبحث عنها غير موجودة أو تم نقلها
